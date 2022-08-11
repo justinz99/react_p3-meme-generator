@@ -1,75 +1,55 @@
-html {
-    font-family: 'Quicksand', sans-serif;
-    background-color: #23252C;
-    color: #DCDCDC;
-}
-
-h1, h2, h3, h4, h5 {
-    color: #F5F5F5;
-}
-
-h1 {
-    margin-bottom: -10px;
-}
-
 .container {
-    width: 40%;
-    display: absolute;
-    margin: auto;
-    margin-top: 2vh;
-    background-color: #383b47;
-    border-radius: 20px;
-    padding: 10px 30px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Quicksand', sans-serif;
 }
 
-.bio {
+nav {
+    height: 70px;
+    background-color: #F55A5A;
+    text-align: center;
+    padding: 5px;
+    color:white;
+}
+
+.trip-card {
     display: flex;
-    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+img {
+    width: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 50px;
+}
+
+.location {
+    display: flex;
     align-items: center;
 }
 
-.bio > img {
-    width: 50%;
-    border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, 
-                rgba(0, 0, 0, 0.12) 0px -12px 30px, 
-                rgba(0, 0, 0, 0.12) 0px 4px 6px, 
-                rgba(0, 0, 0, 0.17) 0px 12px 13px,
-                rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-
-button {
-    margin: 10px 10px;
-    padding: 10px 15px;
-    font-size: 2rem;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    background-color: #8b8b8b;
-    transition: all .3s ease-in;
-}
-
-#mail:hover {
-    background-color: #1b9936;
-}
-
-#linkedin:hover {
-    background-color: #3483dd;
-}
-
-#instagram:hover {
-    background-color: #f165b2;
-}
-
-#github:hover {
-    background-color: #eca03b;
+i {
+    margin: 5px;
 }
 
 a {
-    color: white;
+    color: grey;
     text-decoration: none;
+    margin-left: 100px;
 }
 
-p {
-    font-size: 18px;
+h3 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+h1 {
+    margin-top: -10px;
+}
+
+.date {
+    color:grey;
 }

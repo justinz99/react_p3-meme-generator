@@ -1,16 +1,21 @@
-import React from 'react';
-import Bio from "./components/Bio";
-import About from "./components/About";
-import Interests from "./components/Interests";
-import Footer from "./components/Footer";
+import React from 'react'
+import Trip from './components/Trip'
+import travelLog from "./data"
+import Nav from './components/Nav'
 
 export default function App() {
+    const trips = travelLog.map(trip => {
+        return (
+            <Trip 
+                key = {trip.id}
+                {...trip}
+            />
+        )
+    })
     return (
         <div className='container'>
-            <Bio />
-            <About />
-            <Interests />
-            <Footer />
+            <Nav />
+            {trips}
         </div>
     )
 }
