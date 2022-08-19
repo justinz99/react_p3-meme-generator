@@ -1,21 +1,12 @@
 import React from 'react'
-import Trip from './components/Trip'
-import travelLog from "./data"
-import Nav from './components/Nav'
+import Header from './components/Header'
+import Meme from './components/Meme'
 
 export default function App() {
-    const trips = travelLog.map(trip => {
-        return (
-            <Trip 
-                key = {trip.id}
-                {...trip}
-            />
-        )
-    })
     return (
         <div className='container'>
-            <Nav />
-            {trips}
+            <Header />
+            <Meme />
         </div>
     )
 }
